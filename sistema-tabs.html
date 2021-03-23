@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Componentes Web</title>
-        <meta title="Componentes Web">
+        <title>Sistema Tabs</title>
+        <meta title="Sistema Tabs">
         <meta charset="utf-8">
         <link rel="icon" href="img/favicon.png">
 
@@ -21,19 +21,34 @@
 
         <!-- Cargar CSS propio -->
         <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/estilo-prepro.css">
     </head>
 
     <body class="fondo-dark">
-        
 
         <header>
             
         </header>
 
         <main>
-            <nav>
-                <a href="precarga-barra.html">Precarga Barra</a>
-            </nav>
+            <!-- Sistema Tabs -->
+            <section id="tab-system">
+                <article>
+                    <nav>
+                        <a href="#" id="tab-01" class="tab-activa">Whiskys</a>
+                        <a href="#" id="tab-02" class="tab-inactiva">Tequilas</a>
+                        <a href="#" id="tab-03" class="tab-inactiva">Vinos</a>
+                    </nav>
+
+                    <figure>
+                        <div id="contenedor-tabs">
+                            <div id="conte-tab-01"></div>
+                            <div id="conte-tab-02"></div>
+                            <div id="conte-tab-03"></div>
+                        </div>
+                    </figure>
+                </article>
+            </section>
         </main>
 
         <footer>

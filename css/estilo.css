@@ -25,123 +25,83 @@ body { overflow-x: hidden; background: #000; }
 
 /* CSS propio */
 
-/* Componente PopUp */
-aside#pop-up { width: 100%; height: 100%; display: none; margin: 0; float: none; position: fixed; top: 0; left: 0; z-index: 99999; background: rgba(0,0,0,0.93); }
-
-aside#pop-up figure { width: 550px; height: 550px; display: block; margin: 8vh auto; float: none; position: relative; }
-
-aside#pop-up figure a#cerrar-popup { width: 40px; height: auto; display: block; margin: 0; float: none; position: absolute; top: -20px; right: -20px; z-index: 99996; color: #fff; background: #09f; text-align: center; font-size: 1.3em; padding: 8px 0; border-radius: 50%; transition: all 0.3s ease-in; }
-aside#pop-up figure a#cerrar-popup:hover { color: #fff; background: #f50; transition: all 0.3s ease-in; }
-
-aside#pop-up figure a#img-popup { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; border-radius: 5px; overflow: hidden; transition: all 0.3s ease-in; }
-aside#pop-up figure a#img-popup img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; transition: all 0.3s ease-in; }
-aside#pop-up figure a#img-popup:hover { opacity: 0.9; transition: all 0.3s ease-in; }
-aside#pop-up figure a#img-popup:hover img { filter: saturate(2); transform: scale(1.03); transition: all 0.3s ease-in; }
-
-
-/* Componente Menú Móviles */
-aside#menu-movil { width: 290px; height: 100%; display: block; margin: 0; float: none; position: fixed; top: 0; left: -290px; z-index: 9999; background: rgb(48 54 106 / 100%); }
-
-aside#menu-movil a#abrir { width: 40px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 30px; right: -60px; z-index: 99996; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; }
-aside#menu-movil a#abrir:hover { color: #000; transition: all 0.3s ease-in; }
-
-.azul { color: #051B68; }
-.blanco { color: #fff; }
-
-aside#menu-movil a#cerrar { width: 40px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 30px; right: -60px; z-index: 99996; color: #fff; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; }
-aside#menu-movil a#cerrar:hover { color: #999; transition: all 0.3s ease-in; }
-
-aside#menu-movil nav { width: 70%; height: auto; display: block; margin: 40px auto 0 auto; float: none; position: relative; }
-aside#menu-movil nav a { width: 100%; height: auto; display: block; margin: 0 auto 25px; float: none; position: relative; color: #fff; text-decoration: none; transition: all 0.3s ease-in; }
-aside#menu-movil nav a:hover { color: #999; transition: all 0.3s ease-in; }
+/* Componente Precarga Barra */
+aside#precarga-barra { width: 100%; height: 100%; display: block; margin: 0; float: none; position: fixed; top: 0; left: 0; z-index: 99999; background: rgb(195, 0, 255); }
+aside#precarga-barra article { width: 80%; height: 100%; display: block; margin: 0 auto; float: none; position: relative; }
+aside#precarga-barra article figure { width: 50%; height: 10px; display: block; margin: 49vh auto; float: none; position: relative; border-radius: 5px; overflow: hidden; }
+aside#precarga-barra article figure div#barra-carga { width: 0.1%; height: 10px; display: block; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 10; background: #fff; border-radius: 0 5px 5px 0; }
+aside#precarga-barra article figure div#barra-base { width: 100%; height: 10px; display: block; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 9; background: rgb(89, 1, 116); }
 
 
 
-/* Componente: HEADER */
-header { width: 100%; height: 100px; position: fixed; top: 0; left: 0; z-index: 9998; margin: 0; float: none; }
-header article { width: 1100px; height: 100px; position: relative; margin: 0 auto; float: none; }
+/* Componente Precarga BPuntos */
+aside#precarga-puntos { width: 100%; height: 100%; display: block; margin: 0; float: none; position: fixed; top: 0; left: 0; z-index: 99999; background: rgb(195, 0, 255); }
+aside#precarga-puntos article { width: 80%; height: 100%; display: block; margin: 0 auto; float: none; position: relative; }
+aside#precarga-puntos article figure { width: 200px; height: 10px; display: block; margin: 49vh auto; float: none; position: relative; }
 
-header article a { width: 189px; height: 80px; display: block; position: relative; margin: 0 auto; float: none; top: 10px; }
-header article a img { width: auto; height: 80px; display: block; position: relative; margin: 0 auto; float: none; }
+aside#precarga-puntos article figure div#carga { width: 100%; height: 10px; display: block; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 10; }
+aside#precarga-puntos article figure div#carga div.puntos-carga { width: 10px; height: 10px; display: block; margin: 0 5px; float: left; position: relative; background: #fff; border-radius: 50%; opacity: 0; }
 
-.transparente { background: rgb(196 196 196 / 0%); }
-.gris { background: rgb(196 196 196 / 100%); }
+aside#precarga-puntos article figure div#base { width: 100%; height: 10px; display: block; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 9; }
+aside#precarga-puntos article figure div#base div.puntos-base { width: 10px; height: 10px; display: block; margin: 0 5px; float: left; position: relative; background: rgb(89, 1, 116); border-radius: 50%; }
+
+
+
+/* Componente: Contenedor HEADER */
+header { width: 100%; height: 80px; position: fixed; top: 0; left: 0; z-index: 9998; margin: 0; float: none; background: #333; }
 
 
 
 /* Componente: Contenedor MAIN */
-main { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
+main { width: 100%; height: auto; position: relative; margin: 80px auto 0 auto; float: none; }
 
 
 
-/* Slider Home */
-main section#slider-home { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; /* background: url(../img/slider-01.jpg) no-repeat top center; background-size: cover; */ }
-main section#slider-home article { width: 100%; height: 100vh; position: relative; margin: 0 auto; float: none; }
-main section#slider-home article figure { width: 100%; height: 100vh; position: relative; margin: 0; float: left; }
-main section#slider-home article figure.slider-01 { background: url(../img/slider-01.jpg) no-repeat top center; background-size: cover; }
-main section#slider-home article figure.slider-02 { background: url(../img/slider-02.jpg) no-repeat top center; background-size: cover; }
-main section#slider-home article figure.slider-03 { background: url(../img/slider-03.jpg) no-repeat top center; background-size: cover; }
+/* Componente Tabs System */
+/*
+main section#tab-system { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #fff; padding: 75px 0; }
+main section#tab-system article { width: 1100px; height: 400px; position: relative; margin: 0 auto; float: none; }
 
-.slick-next { right: 30px !important; z-index: 999 !important; }
-.slick-prev { left: 30px !important; z-index: 999 !important; }
+main section#tab-system article nav { width: 345px; height: 35px; position: relative; margin: 0 auto; float: none; }
+main section#tab-system article nav a { width: auto; height: auto; position: relative; margin: 0; float: left; display: block; font-size: 1.35em; line-height: 1em; text-decoration: none; padding: 7px 25px; letter-spacing: 0.1em; font-weight: 600; text-align: center; transition: all 0.3s ease-in; }
+main section#tab-system article nav a:hover { transition: all 0.3s ease-in; }
 
-.slick-dots { bottom: 30px !important; }
-.slick-dots li button { width: 10px !important; height: 10px !important; }
-.slick-dots li button:before { width: 10px !important; height: 10px !important; font-size: 1em !important; color: transparent !important; border-radius: 50% !important; background: #f50 !important; opacity: 1 !important; }
-.slick-dots li.slick-active button:before { color: transparent !important; background: #fff !important; opacity: 1 !important; }
+main section#tab-system article nav a.tab-activa { color: #000; border-bottom: solid 2px #09f; }
+main section#tab-system article nav a.tab-inactiva { color: #999; border-bottom: solid 2px #fff; }
 
+main section#tab-system article nav a.tab-inactiva:hover { color: #000; border-bottom: solid 2px #09f; }
 
+main section#tab-system article figure { width: 1100px; height: 350px; position: relative; margin: 15px auto 0 auto; float: none; overflow: hidden; }
+main section#tab-system article figure div#contenedor-tabs { width: 3300px; height: 350px; position: absolute; top: 0; left: 0; margin: 0; float: none; }
+main section#tab-system article figure div#contenedor-tabs div#conte-tab-01,
+main section#tab-system article figure div#contenedor-tabs div#conte-tab-02,
+main section#tab-system article figure div#contenedor-tabs div#conte-tab-03 { width: 1100px; height: 350px; position: relative; margin: 0; float: left; }
 
-/* Componente Banner */
-main section#banner { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
-main section#banner nav { width: 100%; height: 560px; position: relative; margin: 0 auto; float: none; background: #000; }
-main section#banner nav a { position: absolute; display: block; transition: 0.3s ease-in; }
-main section#banner nav a:hover { opacity: 0.55; transition: 0.3s ease-in; }
-main section#banner nav a#img-banner-01 { width: 50%; height: 100%; top: 0; left: 0; background: url(../img/fotos-grupo-1-001.jpg) no-repeat top center; background-size: cover; }
-main section#banner nav a#img-banner-02 { width: 50%; height: 50%; top: 0; right: 0; background: url(../img/fotos-grupo-1-002.jpg) no-repeat top center; background-size: cover; }
-main section#banner nav a#img-banner-03 { width: 15%; height: 50%; bottom: 0; right: 35%; background: url(../img/fotos-grupo-1-003.jpg) no-repeat top center; background-size: cover; }
-main section#banner nav a#img-banner-04 { width: 35%; height: 50%; bottom: 0; right: 0; background: url(../img/fotos-grupo-1-004.jpg) no-repeat top center; background-size: cover; }
+main section#tab-system article figure div#contenedor-tabs div#conte-tab-01 { background: #ff0; }
+main section#tab-system article figure div#contenedor-tabs div#conte-tab-02 { background: #09f; }
+main section#tab-system article figure div#contenedor-tabs div#conte-tab-03 { background: #f00; }
+*/
 
 
 
-/* Componente Grid Instagram */
-main section#grid-instagram { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #fff; }
-main section#grid-instagram article { width: 1100px; height: auto; position: relative; margin: 0 auto; float: none; padding: 60px 0; }
-main section#grid-instagram article a { width: 330px; height: 330px; position: relative; margin: 17px; float: none; display: inline-block; overflow: hidden; transition: all 0.3s ease-in; }
-main section#grid-instagram article a img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; transition: all 0.3s ease-in; }
-main section#grid-instagram article a:hover { opacity: 0.9; transition: all 0.3s ease-in; }
-main section#grid-instagram article a:hover img { transform: scale(1.05); transition: all 0.3s ease-in; }
+/* Componente Acordeón */
+main section#acordeon {  }
+main section#acordeon article {  }
+main section#acordeon article div#caja-acordeon {  }
+main section#acordeon article div#caja-acordeon div.fila-acordeon {  }
+
+main section#acordeon article div#caja-acordeon div.fila-acordeon a {  }
+main section#acordeon article div#caja-acordeon div.fila-acordeon a span.caja-iconos {  }
+main section#acordeon article div#caja-acordeon div.fila-acordeon a span.caja-iconos span.abierto {  }
+main section#acordeon article div#caja-acordeon div.fila-acordeon a span.caja-iconos span.cerrado {  }
+main section#acordeon article div#caja-acordeon div.fila-acordeon a span.nombre-pregunta {  }
+
+main section#acordeon article div#caja-acordeon div.fila-acordeon figure {  }
+main section#acordeon article div#caja-acordeon div.fila-acordeon figure p {  }
 
 
 
-/* Componente Fotos Home */
-main section#fotos-home { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
-
-main section#fotos-home a#btn-naranja { width: 50px; height: auto; display: block; float: none; position: absolute; top: -25px; left: 150px; z-index: 50; border-radius: 50%; color: #fff; background: #f50; text-align: center; text-decoration: none; font-size: 2.5em; line-height: 1em; padding: 5px 0; transition: all 0.3s ease-in; }
-main section#fotos-home a#btn-naranja:hover { transform: rotate(-45deg); background: #000; transition: all 0.3s ease-in; }
-
-main section#fotos-home nav { width: 100%; height: 1000px; position: relative; margin: 0 auto; float: none; background: #000; }
-main section#fotos-home nav a { position: absolute; display: block; transition: 0.3s ease-in; }
-main section#fotos-home nav a:hover { opacity: 0.55; transition: 0.3s ease-in; }
-
-main section#fotos-home nav a#img-fotos-home-01 { width: 50%; height: 50%; top: 0; left: 0; background: url(../img/fotos-grupo-1-001.jpg) no-repeat top center; background-size: cover; }
-
-main section#fotos-home nav a#img-fotos-home-02 { width: 25%; height: 25%; top: 0; right: 25%; background: url(../img/fotos-grupo-1-002.jpg) no-repeat top center; background-size: cover; }
-
-main section#fotos-home nav a#img-fotos-home-03 { width: 25%; height: 25%; top: 0; right: 0; background: url(../img/fotos-grupo-1-003.jpg) no-repeat top center; background-size: cover; }
-
-main section#fotos-home nav a#img-fotos-home-04 { width: 50%; height: 25%; top: 25%; right: 0; background: url(../img/fotos-grupo-1-004.jpg) no-repeat top center; background-size: cover; }
-
-main section#fotos-home nav a#img-fotos-home-05 { width: 50%; height: 25%; bottom: 25%; left: 0; background: url(../img/fotos-grupo-1-004.jpg) no-repeat top center; background-size: cover; }
-
-main section#fotos-home nav a#img-fotos-home-06 { width: 25%; height: 25%; bottom: 0; left: 0; background: url(../img/fotos-grupo-1-002.jpg) no-repeat top center; background-size: cover; }
-
-main section#fotos-home nav a#img-fotos-home-07 { width: 25%; height: 25%; bottom: 0; left: 25%; background: url(../img/fotos-grupo-1-003.jpg) no-repeat top center; background-size: cover; }
-
-main section#fotos-home nav a#img-fotos-home-08 { width: 50%; height: 50%; bottom: 0; right: 0; background: url(../img/fotos-grupo-1-001.jpg) no-repeat top center; background-size: cover; }
-
-
-
+/* Componente: Contenedor FOOTER */
 footer { width: 100%; height: 300px; position: relative; margin: 0 auto; float: none; background: #333; }
 
 

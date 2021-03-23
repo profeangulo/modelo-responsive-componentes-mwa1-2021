@@ -1,0 +1,29 @@
+main section#tab-system {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  float: none;
+  position: relative;
+}
+
+main section#tab-system article {
+  width: 1100px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  float: none;
+  position: relative;
+}
+
+main section#tab-system article nav a.tab-activa {
+  color: #000;
+  border: solid 2px #09f;
+}
+
+main section#tab-system article nav a.tab-inactiva {
+  color: #999;
+  border: solid 2px #fff;
+}
+
+/*# sourceMappingURL=estilo-prepro.css.map */
