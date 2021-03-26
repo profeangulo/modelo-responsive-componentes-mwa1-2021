@@ -48,7 +48,7 @@ $(document).ready(function(){
     $('#tab-02').click(function(){
         /* $('div#contenedor-tabs').css('left','-1100px'); */
         $('div#contenedor-tabs').animate({
-            left: -1100
+            left: '-100%'
         },200,'easeOutExpo');
 
         $('#tab-02').addClass('tab-activa');
@@ -61,7 +61,7 @@ $(document).ready(function(){
     $('#tab-03').click(function(){
         /* $('div#contenedor-tabs').css('left','-2200px'); */
         $('div#contenedor-tabs').animate({
-            left: -2200
+            left: '-200%'
         },200,'easeOutExpo');
 
         $('#tab-03').addClass('tab-activa');
@@ -70,4 +70,75 @@ $(document).ready(function(){
         $('#tab-02, #tab-01').removeClass('tab-activa');
         $('#tab-02, #tab-01').addClass('tab-inactiva');
     });
+
+
+
+    // Acordeón
+    $('#abre-fila-01').click(function(){
+        // Apertura y Cierre
+        $('figure').hide(300);
+        $('figure#conte-fila-01').show(300);
+
+        // Íconos
+        $('span.abierto').hide();
+        $('span.cerrado').show();
+
+        $('span.abierto',this).show();
+        $('span.cerrado',this).hide();
+
+        // Activos e Inactivos
+        $('div.fila-acordeon a').removeClass('acord-abierto');
+        $('div.fila-acordeon a').addClass('acord-cerrado');
+
+        $('#abre-fila-01').addClass('acord-abierto');
+        $('#abre-fila-01').removeClass('acord-cerrado');
+    });
+
+
+    $('#abre-fila-02').click(function(){
+        // Apertura y Cierre
+        $('figure').hide(300);
+        $('figure#conte-fila-02').show(300);
+
+        // Íconos
+        $('span.abierto').hide();
+        $('span.cerrado').show();
+
+        $('span.abierto',this).show();
+        $('span.cerrado',this).hide();
+
+        // Activos e Inactivos
+        $('div.fila-acordeon a').removeClass('acord-abierto');
+        $('div.fila-acordeon a').addClass('acord-cerrado');
+
+        $('#abre-fila-02').addClass('acord-abierto');
+        $('#abre-fila-02').removeClass('acord-cerrado');
+    });
+
+
+    $('#abre-fila-03').click(function(){
+        // Apertura y Cierre
+        $('figure').hide(300);
+        $('figure#conte-fila-03').show(300);
+
+        // Íconos
+        $('span.abierto').hide();
+        $('span.cerrado').show();
+
+        $('span.abierto',this).show();
+        $('span.cerrado',this).hide();
+
+        // Activos e Inactivos
+        $('div.fila-acordeon a').removeClass('acord-abierto');
+        $('div.fila-acordeon a').addClass('acord-cerrado');
+
+        $('#abre-fila-03').addClass('acord-abierto');
+        $('#abre-fila-03').removeClass('acord-cerrado');
+    });
+
+
+    // Acordeón abre de forma automática
+    $('figure#conte-fila-01').delay(500).show(500);
+    $('#abre-fila-01').removeClass('acord-cerrado');
+    $('#abre-fila-01').addClass('acord-abierto');
 });

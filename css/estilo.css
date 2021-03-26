@@ -58,25 +58,27 @@ main { width: 100%; height: auto; position: relative; margin: 80px auto 0 auto; 
 
 
 /* Componente Tabs System */
-/*
 main section#tab-system { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #fff; padding: 75px 0; }
-main section#tab-system article { width: 1100px; height: 400px; position: relative; margin: 0 auto; float: none; }
+main section#tab-system article { width: 80%; height: 400px; position: relative; margin: 0 auto; float: none; }
 
 main section#tab-system article nav { width: 345px; height: 35px; position: relative; margin: 0 auto; float: none; }
 main section#tab-system article nav a { width: auto; height: auto; position: relative; margin: 0; float: left; display: block; font-size: 1.35em; line-height: 1em; text-decoration: none; padding: 7px 25px; letter-spacing: 0.1em; font-weight: 600; text-align: center; transition: all 0.3s ease-in; }
 main section#tab-system article nav a:hover { transition: all 0.3s ease-in; }
 
+/*
 main section#tab-system article nav a.tab-activa { color: #000; border-bottom: solid 2px #09f; }
 main section#tab-system article nav a.tab-inactiva { color: #999; border-bottom: solid 2px #fff; }
 
 main section#tab-system article nav a.tab-inactiva:hover { color: #000; border-bottom: solid 2px #09f; }
+*/
 
-main section#tab-system article figure { width: 1100px; height: 350px; position: relative; margin: 15px auto 0 auto; float: none; overflow: hidden; }
-main section#tab-system article figure div#contenedor-tabs { width: 3300px; height: 350px; position: absolute; top: 0; left: 0; margin: 0; float: none; }
+main section#tab-system article figure { width: 100%; height: 350px; position: relative; margin: 15px auto 0 auto; float: none; overflow: hidden; }
+main section#tab-system article figure div#contenedor-tabs { width: 300%; height: 350px; position: absolute; top: 0; left: 0; margin: 0; float: none; }
 main section#tab-system article figure div#contenedor-tabs div#conte-tab-01,
 main section#tab-system article figure div#contenedor-tabs div#conte-tab-02,
-main section#tab-system article figure div#contenedor-tabs div#conte-tab-03 { width: 1100px; height: 350px; position: relative; margin: 0; float: left; }
+main section#tab-system article figure div#contenedor-tabs div#conte-tab-03 { width: 33.33%; height: 350px; position: relative; margin: 0; float: left; }
 
+/*
 main section#tab-system article figure div#contenedor-tabs div#conte-tab-01 { background: #ff0; }
 main section#tab-system article figure div#contenedor-tabs div#conte-tab-02 { background: #09f; }
 main section#tab-system article figure div#contenedor-tabs div#conte-tab-03 { background: #f00; }
@@ -85,19 +87,28 @@ main section#tab-system article figure div#contenedor-tabs div#conte-tab-03 { ba
 
 
 /* Componente Acordeón */
-main section#acordeon {  }
-main section#acordeon article {  }
-main section#acordeon article div#caja-acordeon {  }
-main section#acordeon article div#caja-acordeon div.fila-acordeon {  }
+main section#acordeon { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #fff; padding: 75px 0; }
+main section#acordeon article { width: 80%; height: auto; position: relative; margin: 0 auto; float: none; }
+main section#acordeon article div#caja-acordeon { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
+main section#acordeon article div#caja-acordeon div.fila-acordeon { width: 100%; height: auto; position: relative; margin: 0 auto 5px; float: none; }
 
-main section#acordeon article div#caja-acordeon div.fila-acordeon a {  }
-main section#acordeon article div#caja-acordeon div.fila-acordeon a span.caja-iconos {  }
-main section#acordeon article div#caja-acordeon div.fila-acordeon a span.caja-iconos span.abierto {  }
-main section#acordeon article div#caja-acordeon div.fila-acordeon a span.caja-iconos span.cerrado {  }
-main section#acordeon article div#caja-acordeon div.fila-acordeon a span.nombre-pregunta {  }
+main section#acordeon article div#caja-acordeon div.fila-acordeon a { width: 100%; height: 35px; position: relative; margin: 0 auto; float: none; display: block; color: #fff; transition: all 0.3s ease-in; }
 
-main section#acordeon article div#caja-acordeon div.fila-acordeon figure {  }
-main section#acordeon article div#caja-acordeon div.fila-acordeon figure p {  }
+.acord-cerrado { background: #09f; border: solid 1px #09f; border-radius: 5px; }
+.acord-abierto { background: #333; border: solid 1px #333; border-radius: 5px 5px 0 0; }
+
+main section#acordeon article div#caja-acordeon div.fila-acordeon a span.caja-iconos { width: 35px; height: 35px; display: block; margin: 0 10px 0 15px; float: left; }
+main section#acordeon article div#caja-acordeon div.fila-acordeon a span.caja-iconos span.abierto { width: 35px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 2; padding: 8px 0; text-align: center; font-size: 1.05em; font-weight: 900; letter-spacing: 0.035em; }
+main section#acordeon article div#caja-acordeon div.fila-acordeon a span.caja-iconos span.cerrado { width: 35px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 0; left: 0; z-index: 1; padding: 8px 0; text-align: center; font-size: 1.05em; font-weight: 900; letter-spacing: 0.035em; }
+main section#acordeon article div#caja-acordeon div.fila-acordeon a span.nombre-pregunta { width: auto; height: auto; display: block; float: left; text-decoration: none; padding: 7px 0; font-size: 1.05em; font-weight: 300; letter-spacing: 0.035em; }
+
+main section#acordeon article div#caja-acordeon div.fila-acordeon a:hover { background: #333; border: solid 1px #333; transition: all 0.3s ease-in; }
+
+main section#acordeon article div#caja-acordeon div.fila-acordeon figure { width: 94%; height: auto; position: relative; margin: 0 auto; float: none; display: none; background: #fff; border: solid 1px #9999; padding: 30px 3%; border-radius: 0 0 5px 5px; }
+main section#acordeon article div#caja-acordeon div.fila-acordeon figure p { padding: 0 0 15px 0; font-size: 1em; line-height: 1.35em; text-align: justify; column-count: 2; column-gap: 30px; }
+main section#acordeon article div#caja-acordeon div.fila-acordeon figure p:last-child { padding: 0; }
+
+main section#acordeon article div#caja-acordeon div.fila-acordeon figure p img { width: auto; height: 135px; display: block; margin: 0 25px 7px 0; float: left; position: relative; border-radius: 5px; }
 
 
 
@@ -166,6 +177,18 @@ footer { width: 100%; height: 300px; position: relative; margin: 0 auto; float: 
     main section#fotos-home nav a#img-fotos-home-08 { width: 100%; height: 290px; }
 }
 
+/* Breakpoint 1099px */
+@media only screen and (max-width: 1099px){
+    main section#acordeon article div#caja-acordeon div.fila-acordeon figure p { column-count: 1; column-gap: 0; }
+    main section#acordeon article div#caja-acordeon div.fila-acordeon figure p img { width: 100%; height: auto; margin: 0 auto 25px; float: none; }
+
+    main section#tab-system article figure { height: 270px; }
+    main section#tab-system article figure div#contenedor-tabs { height: 270px; }
+    main section#tab-system article figure div#contenedor-tabs div#conte-tab-01,
+    main section#tab-system article figure div#contenedor-tabs div#conte-tab-02,
+    main section#tab-system article figure div#contenedor-tabs div#conte-tab-03 { height: 270px; }
+}
+
 /* Breakpoint 699px */
 @media only screen and (max-width: 699px){
     aside#pop-up figure { width: 80%; height: 80%; }
@@ -173,10 +196,29 @@ footer { width: 100%; height: 300px; position: relative; margin: 0 auto; float: 
 
 /* MQ para Móviles Grandes = Breakpoint 499px */
 @media only screen and (max-width: 499px){
-    
+    main section#tab-system article nav { width: 290px; }
+    main section#tab-system article nav a { padding: 7px 16px; }
 }
 
 /* MQ para Móviles Pequeños = Breakpoint 399px */
 @media only screen and (max-width: 399px){
     main section#grid-instagram article a { width: 100%; height: auto; }
 }
+
+
+
+
+/*
+
+* Landing Page - 1ra y 2da Fornativa del 3er Corte:
+Integrar 1 de las 2  precargas
+y 3 de los siguientes componentes:
+- Acordeón
+- Sistema de Pestañas
+- Slider (Slick Slider)
+- Menú Responsive
+
+1ra Formativa: Maquetación para Escritorio y Interactividad estén OK
+2da Formativa: Maquetación Responsive de Landing Page esté OK
+
+*/
